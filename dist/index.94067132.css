@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+  background-color: red;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: #00f;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #ff0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+/*# sourceMappingURL=index.94067132.css.map */

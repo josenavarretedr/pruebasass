@@ -1,0 +1,34 @@
+@use '../util/' as util;
+
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: red;
+
+  @include util.breakpoint('sm') {
+    background-color: blue;
+  }
+
+  @include util.breakpoint('md') {
+    background-color: green;
+  }
+
+  @include util.breakpoint('lg') {
+    background-color: yellow;
+  }
+
+  @include util.breakpoint('xl') {
+    background-color: orange;
+  }
+}
